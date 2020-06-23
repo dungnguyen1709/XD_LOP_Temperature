@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(doC) {
+        this.doC = doC;
+
+        this.getDoC = function () {
+            return this.doC;
+        };
+
+        this.setDoC = function () {
+            this.doC = doC;
+        };
+    }
+
+    let temp = new Temperature(25);
+    let doC = temp.getDoC();
+    alert(doC + " change to Fahrenheit : " + (doC * 1.8 + 32));
+    alert(doC + " change to Kenvin : " + (doC + 275.13));
+</script>
+</body>
+</html>
